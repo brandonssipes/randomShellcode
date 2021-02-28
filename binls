@@ -1,0 +1,19 @@
+mov rax, rsp
+add al, 0xaf
+mov rsp, rax
+xor rax, rax
+
+xor 	rsi,	rsi
+push	rsi				
+mov 	rdi,	0x736c2f6e69622f2f	 
+push	rdi
+		
+mov	rdi,rsp
+
+push rsi
+push rdi
+mov rsi, rsp
+				
+mov 	al,	59			
+cdq		
+syscall
