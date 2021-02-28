@@ -1,0 +1,4 @@
+mov rax, rsp
+add al, 0xaf
+mov rsp, rax
+xor rax, rax
